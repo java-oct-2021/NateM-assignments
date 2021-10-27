@@ -34,8 +34,8 @@ public class LanguageService {
 			}
 	}
 	//update language
-	public Language update(Language updateLanguage) {
-		return languageRepository.save(updateLanguage);
+	public Language updateLanguage(Language updateLang) {
+		return languageRepository.save(updateLang);
 	}
 	//delete language
 	public void delete(Long id) {
