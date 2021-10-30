@@ -20,6 +20,7 @@ import com.ncm.relationships.services.PersonService;
 public class MainController {
 	@Autowired
 	private final PersonService personService;
+	@Autowired
 	private final LicenseService licenseService;
 	
 	public MainController(PersonService personService, LicenseService licenseService) {
