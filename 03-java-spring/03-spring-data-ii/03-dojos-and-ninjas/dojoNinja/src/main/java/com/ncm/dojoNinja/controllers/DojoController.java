@@ -37,10 +37,10 @@ public class DojoController {
 	@PostMapping("/dojo/create")
 	public String createDojo(@ModelAttribute("dojos") Dojo dojo) {
 		this.dojoService.createDojo(dojo);
-		return "redirect:/view/{id}";
+		return "redirect:/ninja";
 	}
 	
-	@GetMapping("/view/{id}")
+	@GetMapping("/view{id}")
 	public String allDojos(@PathVariable("id") Long id, Dojo dojo, Model model) {
 		Dojo showDojo = this.dojoService.oneDojo(id);
 		List<Ninja> showNinjas = this.ninjaService.allNinjas(showDojo);

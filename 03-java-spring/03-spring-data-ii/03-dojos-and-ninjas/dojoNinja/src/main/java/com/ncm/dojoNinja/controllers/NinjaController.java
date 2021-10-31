@@ -32,6 +32,6 @@ public class NinjaController {
 	@PostMapping("/ninja/create")
 	public String createNinja(@ModelAttribute("ninjas") Ninja ninja) {
 		this.ninjaService.createNinja(ninja);
-		return "redirect:/view";
+		return "redirect:/view{id}";
 	}
 }

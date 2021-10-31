@@ -27,5 +27,3 @@ public class DojoService {
 		return dojoRepo.save(newDojo);
 	}
 }
-
-

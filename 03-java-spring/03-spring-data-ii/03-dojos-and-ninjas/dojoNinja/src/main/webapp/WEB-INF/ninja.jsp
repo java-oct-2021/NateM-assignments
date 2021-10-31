@@ -12,7 +12,7 @@
 	<h1>New Ninja</h1>
 	
 	<div class="container">
-	<form:form action="/view" method="post" modelAttribute="ninjas">
+	<form:form action="/ninja/create" method="post" modelAttribute="ninjas">
 	<p>
 		<form:label path="dojo">Dojo:</form:label>
 		<form:select path="dojo">
