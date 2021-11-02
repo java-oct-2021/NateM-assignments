@@ -13,8 +13,8 @@
 
 	<form:form action="/contact/create" method="post" modelAttribute="contacts">
 	<p>
-		<form:label path="studentName">Student</form:label>
-		<form:select path="studentName">
+		<form:label path="student">Student</form:label>
+		<form:select path="student">
 			<c:forEach items="${students}" var="student">
 				<option value="${student.id}">${student.firstName} ${student.lastName}</option>
 			</c:forEach>

@@ -26,9 +26,9 @@
 		 	<tr>
 		 	 	<td><c:out value="${student.firstName} ${students.lastName}"/></td>
 		 	 	<td><c:out value="${student.age}"/></td>
-		 	 	<td><c:out value="${contact.student.address}"/></td>
-		 	 	<td><c:out value="${contact.student.city}"/></td>
-		 	 	<td><c:out value="${contact.student.state}"/></td>
+		 	 	<td><c:out value="${student.contact.address}"/></td>
+		 	 	<td><c:out value="${student.contact.city}"/></td>
+		 	 	<td><c:out value="${student.contact.state}"/></td>
 		 	 </tr>
 		 	</c:forEach>
 		</tbody>

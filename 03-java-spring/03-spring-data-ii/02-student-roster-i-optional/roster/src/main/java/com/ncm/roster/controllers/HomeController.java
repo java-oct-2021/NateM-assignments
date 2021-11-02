@@ -18,14 +18,14 @@ import com.ncm.roster.services.StudentService;
 public class HomeController {
 	
 	@Autowired
-	private final StudentService sService;
+	private StudentService sService;
 	@Autowired
-	private final ContactService cService;
+	private ContactService cService;
 	
-	public HomeController(StudentService sService, ContactService cService) {
-		this.sService = sService;
-		this.cService = cService;
-	}
+//	public HomeController(StudentService sService, ContactService cService) {
+//		this.sService = sService;
+//		this.cService = cService;
+	
 	
 	@GetMapping("/")
 	public String newStudent(@ModelAttribute("students") Student student) {

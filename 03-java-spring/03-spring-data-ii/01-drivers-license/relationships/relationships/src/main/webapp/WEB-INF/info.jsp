@@ -10,11 +10,11 @@
 <body>
 	<h1><c:out value="${person.firstName} ${person.lastName}"/></h1>
 	<br>
-	<h3>License Number: <c:out value="${license.number}"/></h3>
+	<h3>License Number: <c:out value="${person.license.number}"/></h3>
 	<br>
-	<h3>State: <c:out value="${license.state}"/></h3>
+	<h3>State: <c:out value="${person.license.state}"/></h3>
 	<br>
-	<h3>Expiration Date: <c:out value="${license.expiration_date}"/></h3>
+	<h3>Expiration Date: <c:out value="${person.license.expiration_date}"/></h3>
 	
 	<a href="/person">Back to new person</a>
 
