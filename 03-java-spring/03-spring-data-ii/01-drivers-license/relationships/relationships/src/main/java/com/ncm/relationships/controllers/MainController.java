@@ -53,15 +53,13 @@ public class MainController {
 	}
 	
 	@PostMapping("/license/new")
-	public String addLicense(@Valid @ModelAttribute("license") License license, BindingResult result) {
-		if(result.hasErrors()) {
-			return "license.jsp";
-		}
-		else {
+	public String addLicense(@ModelAttribute("license") License license) {
+			System.out.println("Create a license");
+			//System.out.println(license.getExpiration_date());
 			this.licenseService.createLicense(license);
 			return "redirect:/license";
 		}
-	}
+
 	//Show info of one
 	@GetMapping("/info/{id}")
 	public String showInfo(@PathVariable("id") Long id, Model model) {

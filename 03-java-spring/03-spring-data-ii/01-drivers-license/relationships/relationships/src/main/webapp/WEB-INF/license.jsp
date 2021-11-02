@@ -13,7 +13,6 @@
 	<h1>New License</h1>
 		<form:form action="/license/new" method="post" modelAttribute="license">
 		<p>
-		//THIS GIVE US LIST OF OPTIONS
 			<form:label path="person">Person</form:label>
 			<form:select path="person">
 				<c:forEach items="${persons}" var="person">

@@ -16,7 +16,7 @@ public class Contact {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String studentName;
+	//private String studentName;
 	private String address;
 	private String city;
 	private String state;
@@ -27,12 +27,12 @@ public class Contact {
 		
 	
 	}
-	public String getStudentName() {
-		return studentName;
-	}
-	public void setStudentName(String studentName) {
-		this.studentName = studentName;
-	}
+//	public String getStudentName() {
+//		return studentName;
+//	}
+//	public void setStudentName(String studentName) {
+//		this.studentName = studentName;
+//	}
 	public String getAddress() {
 		return address;
 	}

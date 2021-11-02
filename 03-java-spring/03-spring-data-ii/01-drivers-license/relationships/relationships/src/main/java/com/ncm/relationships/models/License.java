@@ -1,5 +1,6 @@
 package com.ncm.relationships.models;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -21,6 +22,7 @@ public class License {
     private Long id;
     private String number;
     private Date expiration_date;
+    
     private String state;
     @Column(updatable=false)
     private Date createdAt;
@@ -43,9 +45,17 @@ public class License {
 	}
 	public void setNumber(String number) {
 		this.number = number;
+		
 	}
 	public Date getExpiration_date() {
-		return expiration_date;
+		return this.expiration_date;
+//		SimpleDateFormat fm = new SimpleDateFormat("yyyy/mm/dd");
+//		return fm.format(this.expiration_date);
+		
+	}
+	public String formatter() {
+		SimpleDateFormat fm = new SimpleDateFormat("yyyy/mm/dd");
+		return fm.format(this.expiration_date);
 	}
 	public void setExpiration_date(Date expiration_date) {
 		this.expiration_date = expiration_date;
