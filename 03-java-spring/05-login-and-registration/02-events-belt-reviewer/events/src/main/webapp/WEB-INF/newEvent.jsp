@@ -31,7 +31,7 @@
 	    <div class="form-group">
 	        <form:label path="date">Event date:</form:label>
 	        <form:errors class="text-danger" path="date"/>
-	        <form:textarea class="form-control" path="date"/>
+	        <form:input type="date" path="date"/>
 	    </div>
 	      <!-- Hidden Input for userId -->
 	      <form:input type="hidden" value="${userId}" path="user"/>

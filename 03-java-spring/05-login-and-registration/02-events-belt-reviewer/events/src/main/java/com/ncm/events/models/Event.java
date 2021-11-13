@@ -25,7 +25,7 @@ public class Event {
 	private String eventName;
 	@Size(min=1, message="Field can't be empty")
 	private String location;
-	@DateTimeFormat(pattern="dd-MM-yyyy")
+	@DateTimeFormat(pattern="yyyy-mm-dd")
 	@NotNull(message="Needs a date")
 	private Date date;
 	
